@@ -209,3 +209,23 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 } */
 
+/* add service worker */
+/* via tutorial_walkthrough https://www.youtube.com/watch?v=TxXwlOAXUko */
+if ('serviceworker' in navigatior) {
+  navigator.serviceWorker.register('.js/sw/sw/js')
+  .then((reg) => {
+    // registration worked
+    if(reg.installing) {
+      console.log('service worker installing');
+    } else if(reg.waiting) {
+      console.log('service worker installed');
+    } else if(reg.active) {
+      console.log('service worker active');
+    }
+
+    console.log('registration succeeded. scope is ' + reg.scope);
+  }).catch((error) => {
+    // registration failed
+    console.log('registration failed with ' + error);
+  });
+}
