@@ -111,6 +111,8 @@ nav h1 a {
   height: 50px;
   background-color: #3397DB;
   align-items: center;
+      display: inline-flex;
+      justify-content: center;
 }
 .filter-options h2 {
   color: white;
@@ -141,6 +143,7 @@ nav h1 a {
   text-align: center;
   display: inline-flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 #restaurants-list li {
   background-color: #fff;
