@@ -1,32 +1,34 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
+# Restaurant Reviews App Project
 
-## Project Overview: Stage 1
+## Ways to Interact or Develop:
+1. Fork the repository
+2. Clone the repository to your machine *you will need a code editor*
+3. Download the ZIP file and open the .html file from your file explorer in your favorite browser *static only, you will need to spin up a local server to interact with or develop this application*
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+## Description
+A responsive restaurant reviews application with offline capabilities built as project number five of the Grow with Google Udacity Front End Web developer challenge
 
-### Specification
+## Project Requirements
+*The project challenge was to build an app that satisfies the following:*
+- Insert Map API keys into the project
+- Spin up a local server to use for development
+- Convert the site to a responsive site that works with various devices
+- Add accessibility (ARIA)
+- Add a service worker (sw.js) so the application has offline functionality
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+## How I Built the App:
+- I built the app with JavaScript, CSS, HTML, and Node.js
 
-### What do I do from here?
+- Inserted Mapbox API Keys into main.js and restaurant_info.js files
+- spun up a local server using Node.js command line and 'http-serve'
+- Changed the port in dbhelper.js to my local host (which was 8080)
+- Converted the site to responsive using flexbox in styles.css
+- added tab index and image alt attributes to assist with accessibility (some of this was done dynamically in the    restaurant_info.js files)
+- Added a service worker for offline capabilities - created sw.js and registered my sw before adding code for the
+  specific resources to be cashed
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
-
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
-
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
-
-## Leaflet.js and Mapbox:
-
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
-
-### Note about ES6
-
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
-
-
-
+## Instructions for Interacting:
+1. Select a neighborhood
+2. Select a cuisine
+3. The app will filter the results and deliver them to you
+4. Click on the restaurant you are interested in to find out more about it and read reviews
