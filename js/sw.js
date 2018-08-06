@@ -43,7 +43,7 @@ self.addEventListener('activate', function (event) {
             return Promise.all(
                 casheNames.filter(function (casheName) {
                     return casheName.startsWith('restaurant-') &&
-                    casheName != toCashe;
+                        casheName != toCashe;
                 }).map(function (casheName) {
                     return cashes.delete(casheName);
                 })
@@ -52,7 +52,7 @@ self.addEventListener('activate', function (event) {
     );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
     event.respondWith(
         cashes.match(event.request).then(function (response) {
             return response || fetch(event.request);
