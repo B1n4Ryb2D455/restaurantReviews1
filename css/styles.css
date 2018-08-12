@@ -1,26 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
-/* .container,
-#container,
-#maincontent {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-} */
 
 body {
   background-color: #fdfdfd;
   margin: 0;
-    font-family: Arial,
-    Helvetica,
-    sans-serif;
-    font-size: 10pt;
-    color: #333;
-    line-height: 1.5;
-    flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #333;
+  line-height: 1.5;
+  flex-wrap: wrap;
 }
 
-  td,
+td,
 th,
 p {
   font-family: Arial, Helvetica, sans-serif;
@@ -28,6 +19,8 @@ p {
   color: #333;
   line-height: 1.5;
   flex-wrap: wrap;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 ul,
@@ -36,10 +29,10 @@ li {
   font-size: 10pt;
   color: #333;
   flex-direction: column;
-  display: flex;
   flex-wrap: wrap;
   padding-left: 40px;
   padding-right: 40px;
+  all: initial;
 }
 
 a {
@@ -53,15 +46,13 @@ a:hover,
 a:focus {
   color: #3397db;
   text-decoration: none;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 a img {
   border: none 0px #fff;
   object-fit: contain;
-      max-width: 100%;
-      max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 h1,
@@ -74,6 +65,8 @@ h6 {
   margin: 0 0 20px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 40px;
 }
 
 article,
@@ -86,12 +79,18 @@ footer,
 header,
 hgroup,
 menu,
-nav,
-section {
-  /* display: block; */
+nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 #maincontent {
@@ -146,14 +145,7 @@ nav h1 a {
   list-style: none;
   background-color: #eee;
   font-size: 17px;
-  margin: 0;
-
-}
-
-/* Display list items side by side */
-
-#breadcrumb li {
-
+  width: 90%;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -162,7 +154,6 @@ nav h1 a {
   padding: 8px;
   color: black;
   content: "/\00a0";
-
 }
 
 /* Add a color to all links inside the list */
@@ -170,7 +161,6 @@ nav h1 a {
 #breadcrumb li a {
   color: #0275d8;
   text-decoration: none;
-
 }
 
 /* Add a color on mouse-over */
@@ -178,7 +168,6 @@ nav h1 a {
 #breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
-
 }
 
 /* ====================== Map ====================== */
@@ -187,6 +176,7 @@ nav h1 a {
   height: 400px;
   width: 100%;
   background-color: #ccc;
+  display: flex;
   flex-wrap: wrap;
   /* ====================== Restaurant Filtering ====================== */
   .filter-options {
@@ -194,7 +184,6 @@ nav h1 a {
     height: 50px;
     background-color: #3397DB;
     align-items: center;
-    display: inline-flex;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -205,8 +194,6 @@ nav h1 a {
     font-weight: normal;
     line-height: 1;
     margin: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
   }
   .filter-options select {
     background-color: white;
@@ -218,8 +205,6 @@ nav h1 a {
     margin: 10px;
     padding: 0 10px;
     width: 200px;
-    display: flex;
-    flex-wrap: wrap;
   }
   /* ====================== Restaurant Listing ====================== */
   #restaurants-list {
@@ -331,14 +316,14 @@ nav h1 a {
   }
   #restaurant-img {
     max-width: 100%;
-    max-height: 100%
-    object-fit: contain;
+    max-height: 100% object-fit: contain;
     display: flex;
   }
   #restaurant-address {
     font-size: 12pt;
     margin: 10px 0px;
     display: flex;
+    text-align: center;
   }
   #restaurant-cuisine {
     background-color: #333;
