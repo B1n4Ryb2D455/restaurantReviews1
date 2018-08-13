@@ -5,14 +5,30 @@ body {
   background-color: #fdfdfd;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10pt;
+  font-size: large;
   color: #333;
   line-height: 1.5;
   flex-wrap: wrap;
 }
 
-td,
-th,
+td {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #333;
+  line-height: 1.5;
+  flex-wrap: wrap;
+  padding-right: 60px;
+}
+
+th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #333;
+  line-height: 1.5;
+  flex-wrap: wrap;
+  padding-right: 60px;
+}
+
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
@@ -20,18 +36,28 @@ p {
   line-height: 1.5;
   flex-wrap: wrap;
   padding-right: 60px;
-  padding-left: 60px;
 }
 
 ul,
-li {
+  {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
   color: #333;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-left: 40px;
   padding-right: 40px;
+  all: initial;
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   all: initial;
 }
 
@@ -40,7 +66,7 @@ a {
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
-}
+ }
 
 a:hover,
 a:focus {
@@ -56,16 +82,55 @@ a img {
 }
 
 h1,
+ {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0 0 20px;
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 40px;
+ }
+
 h2,
+ {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0 0 20px;
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 40px;
+ }
+
 h3,
+ {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0 0 20px;
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 40px;
+ }
+
 h4,
+ {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0 0 20px;
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 40px;
+ }
+
 h5,
+ {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0 0 20px;
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 40px;
+ }
+
 h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   padding-top: 40px;
 }
 
@@ -80,10 +145,10 @@ header,
 hgroup,
 menu,
 nav {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  /* align-items: center; */
 }
 
 section {
